@@ -1,8 +1,6 @@
 from lime.lime_text import LimeTextExplainer
 import webbrowser
 from utils.utils import save_explanation
-
-
 class LIMEExplainer:
     def __init__(self, class_names):
         self.explainer = LimeTextExplainer(class_names=class_names)
